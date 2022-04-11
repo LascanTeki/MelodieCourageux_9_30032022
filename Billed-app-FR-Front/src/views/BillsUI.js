@@ -31,7 +31,7 @@ const rows = (data) => {
 export default ({ data: bills, loading, error }) => {
 
   const modal = () => (`
-    <div class="modal fade" id="modaleFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" data-testid="modaleFile" id="modaleFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -54,7 +54,7 @@ export default ({ data: bills, loading, error }) => {
   }
 
   return (`
-    <div class='layout'>
+    <div data-testid="cont" class='layout'>
       ${VerticalLayout(120)}
       <div class='content'>
         <div class='content-header'>
